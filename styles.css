@@ -1,0 +1,195 @@
+.width95 {
+    width: 95%;
+    margin: auto;
+}
+.flex_align_center {
+    align-items: center;
+}
+.flex_justify_center {
+    justify-content: center;
+}
+
+.flex {
+    display:flex;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.horizontal_list {
+    list-style: none;
+    padding: 0px;
+}
+.horizontal_list li {
+    display: inline-block;
+}
+.horizontal_list li a{
+    text-decoration: none;
+}
+
+/* header top section  */
+.header_top_section {
+    height: 3rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#my_logo {
+    height: 100%;
+    width: auto;
+}
+
+#my_logo img{
+    height: 100%;
+    width: 100%;
+}
+
+#head_top_section_rightDiv {
+    gap: 2em;
+    height: 100%;
+    width: auto;
+}
+
+.search_bar {
+    position: relative;
+}
+
+#input_search_home{
+    height: 0.5em;
+    width: 15em;
+    border-radius: 2rem;
+    outline: none;
+    padding: 1em;
+}
+
+.search_bar button {
+    background-color: transparent;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.3em;
+    right: 0.35em;
+}
+
+.notification_icon {
+    font-size: 1.6em;
+}
+
+.profile_pic {
+    height: 100%;
+    width: 100%;
+}
+.profile_pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* header bottom section  */
+
+#navbar_home_page .horizontal_list{
+    justify-content: center;
+    gap: 2em;
+}
+#navbar_home_page .horizontal_list li{
+    font-size: 1.1em;
+}
+
+/* Carousel */
+
+.carousel_img_container {
+    height: 100%;
+    width: 100%;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+.carousel_img {
+    height: 100%;
+}
+.carousel_img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5em;
+    max-width: 500px;
+}
+
+/* popular artists */
+
+/* header */
+.section_head {
+    justify-content: space-between;
+}
+
+/* card container  */
+
+.section_cards_container {
+    justify-content: space-between;
+}
+#artists_cards_container {
+    gap: 2em;
+    height: auto;
+    width: auto;
+}
+.indivisual_card_container {
+    height: 100%;
+    width: auto;
+    gap: 0.6em;
+}
+.card_img_container {
+    /* height: 10em;
+    width: 10em; */
+}
+
+.card_img_container img{
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 60px;
+    min-height: 60px;
+}
+
+#artists_cards_container .card_img_container img {
+    border-radius: 50%;
+}
+
+/* latest release */
+#latest_release_cards_container {
+    gap: 2em;
+    justify-content: flex-start;
+}
+
+#latest_release_cards_container .indivisual_card_container {
+    width: 40%;
+    gap: 1em;
+    justify-content: space-between;
+}
+#latest_release_cards_container .card_name_date {
+    align-self: center;
+} 
+
+.LR_card_img_container img{
+    height: 100%;
+    width: 100%;
+    max-width: 200px;
+
+}
+
+
+
+
+
+
+
+
