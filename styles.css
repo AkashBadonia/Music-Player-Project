@@ -1,6 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+/* colors */
+:root {
+    --primary_color: #FFF3C7;
+    --secondary_color: #FEC7B4;
+    --tertiary_color: #FC819E;
+    --fourth_color: #F7418F;
+    --bg_color: rgba(254, 199, 180, 0.3);
+}
+
+body {
+    background-color:  var(--primary_color);
+}
+#input_search_home, .search_bar button {
+    background-color: var(--secondary_color);
+    border-color: var(--tertiary_color);
+}
+.section_heading, .search_bar button, .horizontal_list li a, .card_name, .serial_no, .heart, .notification_icon {
+    color: var(--fourth_color);
+}
+
+.artist_name, .card_release_date, .section_more, .dots, #input_search_home::placeholder, .singer_details:not(.section_heading) {
+    color: var(--tertiary_color);
+    /* font-size: 1rem; */
+}
+
 .width95 {
     width: 95%;
     margin: auto;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.mb_2rem {
+    margin-bottom: 2rem;
+}
+
+.mb_1rem {
+    margin-bottom: 2rem;
+}
+
+.mt_0 {
+    margin-top: 0px;
+}
+
+.padding_1em {
+    padding: 1em;
+}
+
+.scroll_width_none {
+    scrollbar-width: none;
 }
 .flex_align_center {
     align-items: center;
@@ -38,25 +91,27 @@
 
 /* header top section  */
 .header_top_section {
-    height: 3rem;
-    width: 100%;
     justify-content: space-between;
 }
 
 #my_logo {
-    height: 100%;
-    width: auto;
+    width: 100%;
+    margin-right: 10%;
 }
 
 #my_logo img{
-    height: 100%;
     width: 100%;
+    height: 100%;
+    max-height: 40px;
+    min-height: 30px;
+    max-width: 160px;
+    min-width: 120px;
 }
 
 #head_top_section_rightDiv {
     gap: 2em;
-    height: 100%;
-    width: auto;
+    width: 100%;
+    justify-content: end;
 }
 
 .search_bar {
@@ -64,7 +119,7 @@
 }
 
 #input_search_home{
-    height: 0.5em;
+    height: 3em;
     width: 15em;
     border-radius: 2rem;
     outline: none;
@@ -73,11 +128,11 @@
 
 .search_bar button {
     background-color: transparent;
-    height: 2.2em;
-    width: 2.2em;
+    height: 2.3em;
+    width: 2.3em;
     border-radius: 50%;
     position: absolute;
-    top: 0.3em;
+    top: 0.35em;
     right: 0.35em;
 }
 
@@ -87,22 +142,38 @@
 
 .profile_pic {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
 .profile_pic img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    max-height: 60px;
+    min-height: 50px;
+    max-width: 60px;
+    min-width: 50px;
 }
 
 /* header bottom section  */
 
 #navbar_home_page .horizontal_list{
     justify-content: center;
-    gap: 2em;
+    gap: 0.5em 2em;
+    border-top: 2px solid var(--fourth_color);
+    border-bottom: 2px solid var(--fourth_color);
+    padding: 1rem;
 }
 #navbar_home_page .horizontal_list li{
     font-size: 1.1em;
+}
+
+
+/* main aside section */
+.main_aside {
+    gap: 2em;
+}
+main {
+    width: 70%;
 }
 
 /* Carousel */
@@ -115,13 +186,22 @@
 }
 
 .carousel_img {
+    width: 100%;
     height: 100%;
+    transition: transform ease 0.6s;
 }
+
 .carousel_img img {
     height: 100%;
     width: 100%;
     border-radius: 0.5em;
     max-width: 500px;
+    min-width: 150px;
+}
+
+.carousel_img:hover, .horizontal_list li:hover {
+    transform: scale(1.2);
+    z-index: 999;
 }
 
 /* popular artists */
@@ -133,29 +213,28 @@
 
 /* card container  */
 
-.section_cards_container {
-    justify-content: space-between;
+#artists_cards_container, .section_cards_container {
+    gap: 1em;              
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
 }
-#artists_cards_container {
-    gap: 2em;
-    height: auto;
-    width: auto;
-}
+
 .indivisual_card_container {
     height: 100%;
-    width: auto;
+    width: 100%;
     gap: 0.6em;
 }
 .card_img_container {
-    /* height: 10em;
-    width: 10em; */
+    /* height: 100%;
+    width: 100%; */
 }
 
 .card_img_container img{
     height: 100%;
     width: 100%;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 250px;
+    max-height: 250px;
     min-width: 60px;
     min-height: 60px;
 }
@@ -164,27 +243,224 @@
     border-radius: 50%;
 }
 
+.card_name {
+    text-align: center;
+}
+
+.name_artist .card_name, .lr_card_name_date_dots .card_name {
+    text-align: start;
+}
+
 /* latest release */
 #latest_release_cards_container {
-    gap: 2em;
+    width: 80%;
+    height: 100%;
     justify-content: flex-start;
+    gap: 1em;
 }
 
 #latest_release_cards_container .indivisual_card_container {
-    width: 40%;
     gap: 1em;
-    justify-content: space-between;
+    justify-content: start;
+    width: 100%;
 }
-#latest_release_cards_container .card_name_date {
-    align-self: center;
-} 
+
 
 .LR_card_img_container img{
+    border-radius: 0.6em;
     height: 100%;
     width: 100%;
-    max-width: 200px;
-
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 60px;
+    min-height: 60px;
 }
+
+.lr_card_name_date_dots {
+    justify-content: space-between;
+}
+
+/* Stations */
+
+.section_cards_container .card_img_container img {
+    border-radius: 0.6em;
+}
+
+.curated_stations .indivisual_card_container {
+    position: relative;
+}
+
+.curated_stations .indivisual_card_container .card_img_container img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 225px;
+    /* min-width: 300px; */
+}
+
+.CS_card_name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.curated_stations {
+    gap: 1em;              
+    /* height: 100%; */
+    width: 100%;
+}
+
+.curated_stations .indivisual_card_container .card_img_container img:hover{
+    transform: scale(1.3);
+    overflow: hidden;
+}
+.curated_stations .indivisual_card_container .card_img_container img{
+    transition: all ease 1s;
+}
+.curated_stations .indivisual_card_container .card_img_container{
+    overflow: hidden;
+}
+
+/* aside section  */
+
+#home_page_aside {
+    width: 28%;
+}
+
+.queue_pl_cards_container {
+    gap: 1em;
+}
+
+.aside_indivisual_container {
+    width: 100%;
+}
+
+.aside_indivisual_container .content{
+    width: 100%;
+    gap: 0.5em;
+}
+
+.aside_indivisual_container .heart{
+    width: 5%;
+}
+
+.aside_indivisual_container .card_img_container{
+    width: 15%;
+    /* height: auto; */
+}
+
+.aside_indivisual_container .card_img_container img{
+    border-radius: 0.2em;
+    height: 100%;
+    width: 100%;
+    min-width: 30px;
+    max-width: 60px;
+    min-height: 30px;
+    max-height: 60px;
+}
+
+.card_img_container, .carousel_img, .LR_card_img_container {
+    position: relative;
+}
+
+.card_img_container::after, .carousel_img::after, .LR_card_img_container::after {
+    content: "\f144"; /* Unicode for the play icon in Font Awesome */
+    /* content: ""attr(href)""; */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--secondary_color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.card_img_container:hover::after, .carousel_img:hover::after, .LR_card_img_container:hover::after {
+    opacity: 1;
+}
+
+/* arijit singh page  */
+.top_section_singer {
+    gap: 2em;
+    background-color: var(--bg_color);
+}
+
+.singer_img_container{
+    width: 40%;
+    flex-grow: 1;
+    max-width: 320px;
+}
+.singer_details {
+    width: 60%;
+    flex-grow: 10;
+}
+.singer_img_container img{
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 0.5em;
+}
+.singer_details {
+    width: 60%;
+}
+
+.btn_type1 {
+    background-color: var(--secondary_color);
+    color: var(--fourth_color);
+    padding: 0.2em;
+    border-radius: 0.5em;
+    border: 2px solid var(--tertiary_color);
+    cursor: pointer;
+    width: 5em;
+}
+.btn_type2 {
+    background-color: transparent;
+    color: var(--fourth_color);
+    padding: 0.2em;
+    border-radius: 0.5em;
+    border: 2px solid var(--tertiary_color);
+    cursor: pointer;
+    width: 5em;
+}
+
+.play_follow_btn {
+    gap: 1em;
+    margin: 1em 0em;
+}
+
+.singer_songs_section {
+    gap: 1em;
+}
+
+.songs_indivisual_container .content .card_img_container img{
+    border-radius: 0.2em;
+    height: 100%;
+    width: 100%;
+    min-width: 30px;
+    max-width: 60px;
+    min-height: 30px;
+    max-height: 60px;
+}
+.songs_indivisual_container{
+    background-color: var(--bg_color);
+    padding: 0.5em;
+}
+.songs_indivisual_container .content {
+    gap: 1.5em;
+}
+
+
+
+
+
+
+
+
+
 
 
 

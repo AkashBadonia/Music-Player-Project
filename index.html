@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
     <title>At Ease : Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
@@ -13,8 +14,10 @@
     <div id="home_page" class="width95">
 
       <!-- header section - search & nav bar  -->
-      <header id="home_page_header" class="header">
-        <div class="header_top_section flex">
+      <header id="home_page_header" class="header width100">
+
+        <!-- header top section  -->
+        <div class="header_top_section flex width100 flex_align_center">
           <div id="my_logo">
             <img src="./static/images/logo/at-ease-high-resolution-logo-transparent.png" alt="At Ease">
           </div>
@@ -30,14 +33,16 @@
             <div class="notification_icon cursor_pointer">
               <i class="fa-solid fa-bell"></i>
             </div>
-            <div class="profile_pic cursor_pointer">
+            <div class="profile_pic cursor_pointer flex flex_align_center flex_justify_center">
               <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
             </div>
           </div>
         </div>
         <!-- temporary HR  -->
-        <hr>
-        <div class="header_bottom_section">
+        <!-- <hr> -->
+
+        <!-- header bottom section -->
+        <div class="header_bottom_section mb_2rem">
           <nav class="navbar" id="navbar_home_page">
             <ul class="horizontal_list flex flex_wrap">
               <li><a href="#">Home</a></li>
@@ -50,223 +55,683 @@
           </nav>
         </div>
         <!-- temporary HR  -->
-        <hr>
+        <!-- <hr> -->
       </header>
             
             
 
+      <section class="main_aside flex">
 
-      <!-- main section -->
-      <main id="home_page_main" class="main_section">
-        
-        <!-- carousel -->
-        <section class="carousel" id="home_page_corousel">
-          <div class="carousel_img_container flex ">
-            <div class="carousel_img" id="caro_img1">
-              <img src="./static/images/carousel/arijit singh.png" alt="">
-            </div>
-            <div class="carousel_img" id="caro_img2">
-              <img src="./static/images/carousel/Party All Night.png" alt="">
-            </div>
-            <div class="carousel_img" id="caro_img3">
-              <img src="./static/images/carousel/Romantic Songs.png" alt="">
-            </div>
-          </div>
-        </section>
-
-        <!-- temporary HR -->
-        <hr>
-
-        <!-- popular artist section  -->
-        <section class="popular_artists">
-
-          <!-- header -->
-          <div id="artists_header" class="section_head flex flex_align_center">
-            <h2 class="section_heading">Popular Artists</h2>
-            <div class="section_more">More</div>
-          </div>
+      
+        <!-- main section -->
+        <main id="home_page_main" class="main_section">
           
-          <!-- cards -->
-          <div id="artists_cards_container" class="section_cards_container flex">
+          <!-- carousel -->
+          <section class="carousel" id="home_page_corousel">
+            <div class="carousel_img_container flex">
+              <div class="carousel_img" id="caro_img1">
+                <img src="./static/images/carousel/arijit singh.png" alt="">
+              </div>
+              <div class="carousel_img" id="caro_img2">
+                <img src="./static/images/carousel/Party All Night.png" alt="">
+              </div>
+              <div class="carousel_img" id="caro_img3">
+                <img src="./static/images/carousel/Romantic Songs.png" alt="">
+              </div>
+            </div>
+            <!-- <div class="carousel_links">
+              <a href="#caro_img1">
+                <i class="fa-solid fa-circle-dot"></i>
+              </a>
+              <a href="#caro_img2">
+                <i class="fa-solid fa-circle-dot"></i>
+              </a>
+              <a href="#caro_img3">
+                <i class="fa-solid fa-circle-dot"></i>
+              </a>
+            </div> -->
+          </section>
 
-            <!-- card 1 -->
-            <div class="indivisual_card_container flex flex_align_center flex_column">
-              <div class="card_img_container">
-                <img src="./static/images/popular artist/arijit singh square.jpg" alt="">
+          <!-- temporary HR -->
+          <!-- <hr> -->
+
+          <!-- popular artist section  -->
+          <section class="popular_artists">
+
+            <!-- header -->
+            <div id="artists_header" class="section_head flex flex_align_center">
+              <h2 class="section_heading">Popular Artists</h2>
+              <div class="section_more">More</div>
+            </div>
+            
+            <!-- cards -->
+            <div id="artists_cards_container" class="section_cards_container flex scroll_width_none">
+
+              <!-- card 1 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <a href="arijit_singh.html" target="_blank">
+                  <div class="card_img_container">
+                    <img src="./static/images/popular artist/arijit singh square.jpg" alt="" href="arijit_singh.html">
+                  </div>
+                </a>
+                <div class="card_name">
+                  Arijit Singh
+                </div>
               </div>
-              <div class="card_name">
-                Arijit Singh
+              
+              <!-- card 2 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/popular artist/udit narayan square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Udit Narayan
+                </div>
+              </div>
+              
+              <!-- card 3 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/popular artist/honey singh square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Honey Singh
+                </div>
+              </div>
+              
+              <!-- card 4  -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/popular artist/shreya ghoshal square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Shreya Ghosal
+                </div>
+              </div>
+              
+              <!-- card 5 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/popular artist/sonu nigam square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Sonu Nigam
+                </div>
+              </div>
+              
+              <!-- card 6 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/popular artist/rahat fateh ali khan square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Rahat Fateh Ali Khan
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- temporary HR  -->
+          <!-- <hr> -->
+
+          <!-- latest release section  -->
+          <section class="latest_release">
+            <!-- header -->
+            <div id="latest_release_header" class="section_head flex flex_align_center">
+              <h2 class="section_heading">Latest Release</h2>
+              <div class="section_more">More</div>
+            </div>
+
+            <!-- cards -->
+            <div id="latest_release_cards_container" class="scroll_width_none section_cards_container flex width100">
+
+              <!-- card 1 -->
+              <div class="indivisual_card_container flex flex_column">
+                <div class="LR_card_img_container">
+                  <img src="./static/images/latest release/O Re Piya Duet From Ameena.jpg" alt="">
+                </div>
+                <div class="lr_card_name_date_dots flex">
+                  <div class="card_name_date">
+                    <div class="card_name">
+                      O Re Piya
+                    </div>
+                    <div class="card_release_date">
+                      29-04-2024
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                  
+              </div>
+
+              <!-- card 2 -->
+              <div class="indivisual_card_container flex flex_column">
+                <div class="LR_card_img_container">
+                  <img src="./static/images/latest release/tu mil gaya.jpg" alt="">
+                </div>
+                <div class="lr_card_name_date_dots flex">
+                  <div class="card_name_date">
+                    <div class="card_name">
+                      Tu Mil Gaya
+                    </div>
+                    <div class="card_release_date">
+                      29-04-2024
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                  
+              </div>
+
+              <!-- card 3 -->
+              <div class="indivisual_card_container flex flex_column">
+                <div class="LR_card_img_container">
+                  <img src="./static/images/latest release/Chhaap Tilak From Goodbye Mamma.jpg" alt="">
+                </div>
+                <div class="lr_card_name_date_dots flex">
+                  <div class="card_name_date">
+                    <div class="card_name">
+                      Chhaap Tilak
+                    </div>
+                    <div class="card_release_date">
+                      29-04-2024
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                  
+              </div>
+
+              <!-- card 4 -->
+              <div class="indivisual_card_container flex flex_column">
+                <div class="LR_card_img_container">
+                  <img src="./static/images/latest release/rang ishq ka - bade miyan chote miyan.jpg" alt="">
+                </div>
+                <div class="lr_card_name_date_dots flex">
+                  <div class="card_name_date">
+                    <div class="card_name">
+                      Rang Ishq Ka
+                    </div>
+                    <div class="card_release_date">
+                      29-04-2024
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+          <!-- stations -->
+          <section class="music_stations mb_1rem">
+            <!-- header -->
+            <div id="stations_header" class="section_head flex flex_align_center">
+              <h2 class="section_heading">Stations</h2>
+              <div class="section_more">More</div>
+            </div>
+            
+            <!-- cards -->
+            <div id="stations_cards_container" class="section_cards_container flex scroll_width_none">
+
+              <!-- card 1 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/stations/dance square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Dance
+                </div>
+              </div>
+              
+              <!-- card 2 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/stations/love square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                Love
+                </div>
+              </div>
+              
+              <!-- card 3 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/stations/workout square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Workout
+                </div>
+              </div>
+              
+              <!-- card 4  -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/stations/retro square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Retro
+                </div>
+              </div>
+              
+              <!-- card 5 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/stations/chill square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Chill
+                </div>
+              </div>
+              
+              <!-- card 6 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/stations/sad square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Sad
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- temporary HR -->
+          <!-- <hr> -->
+
+
+          <!-- curated stations  -->
+          <section class="curated_stations flex">
+            <div class="indivisual_card_container flex flex_align_center flex_column width100">
+              <div class="card_img_container">
+                <img src="./static/images/stations/electronic 43.jpg" alt="">
+              </div>
+              <div class="CS_card_name">
+                Chill
+              </div>
+            </div>
+            <div class="indivisual_card_container flex flex_align_center flex_column width100">
+              <div class="card_img_container">
+                <img src="./static/images/stations/party 43.jpg" alt="">
+              </div>
+              <div class="CS_card_name">
+                Party
+              </div>
+            </div>
+            <div class="indivisual_card_container flex flex_align_center flex_column width100">
+              <div class="card_img_container">
+                <img src="./static/images/stations/road trip 43.jpg" alt="">
+              </div>
+              <div class="CS_card_name">
+                Road Trip
               </div>
             </div>
             
-            <!-- card 2 -->
-            <div class="indivisual_card_container flex flex_align_center flex_column">
-              <div class="card_img_container">
-                <img src="./static/images/popular artist/udit narayan square.jpg" alt="">
-              </div>
-              <div class="card_name">
-                Udit Narayan
-              </div>
+          </section>
+
+          <!-- temporary HR -->
+          <!-- <hr> -->
+
+          <!-- top punjabi songs -->
+          <section class="top_punjabi_song">
+            <!-- header -->
+            <div id="stations_header" class="section_head flex flex_align_center">
+              <h2 class="section_heading">Top Punjabi Songs</h2>
+              <div class="section_more">More</div>
             </div>
             
-            <!-- card 3 -->
-            <div class="indivisual_card_container flex flex_align_center flex_column">
-              <div class="card_img_container">
-                <img src="./static/images/popular artist/honey singh square.jpg" alt="">
+            <!-- cards -->
+            <div id="punjabi_cards_container" class="section_cards_container flex scroll_width_none">
+
+              <!-- card 1 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/qismat square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Qismat
+                </div>
               </div>
-              <div class="card_name">
-                Honey Singh
+              
+              <!-- card 2 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/Backbone square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                Backbone
+                </div>
+              </div>
+              
+              <!-- card 3 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/duji vaar pyar square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Duji Vaar Pyar
+                </div>
+              </div>
+              
+              <!-- card 4  -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/nikle currant square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Nikle Currant 
+                </div>
+              </div>
+              
+              <!-- card 5 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/mummy nu pasand square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Mummy Nu Pasand 
+                </div>
+              </div>
+              
+              <!-- card 6 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/suicide square.jpeg" alt="">
+                </div>
+                <div class="card_name">
+                  Suicide
+                </div>
               </div>
             </div>
-            
-            <!-- card 4  -->
-            <div class="indivisual_card_container flex flex_align_center flex_column">
-              <div class="card_img_container">
-                <img src="./static/images/popular artist/shreya ghoshal square.jpg" alt="">
-              </div>
-              <div class="card_name">
-                Shreya Ghosal
-              </div>
+
+          </section>
+
+          <!-- sounds of isha -->
+          <section class="sounds_of_isha">
+            <!-- header -->
+            <div id="stations_header" class="section_head flex flex_align_center">
+              <h2 class="section_heading">Sounds Of Isha</h2>
+              <div class="section_more">More</div>
             </div>
             
-            <!-- card 5 -->
-            <div class="indivisual_card_container flex flex_align_center flex_column">
-              <div class="card_img_container">
-                <img src="./static/images/popular artist/sonu nigam square.jpg" alt="">
+            <!-- cards -->
+            <div id="SOI_cards_container" class="section_cards_container flex scroll_width_none">
+
+              <!-- card 1 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/Sounds Of Isha/Naiharwa square.png" alt="">
+                </div>
+                <div class="card_name">
+                  Naiharwa
+                </div>
               </div>
-              <div class="card_name">
-                Sonu Nigam
+              
+              <!-- card 2 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/Sounds Of Isha/rang de square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                Rang De
+                </div>
+              </div>
+              
+              <!-- card 3 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/Sounds Of Isha/kaachi che kaya thaari square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Kaachi Che Kaya
+                </div>
+              </div>
+              
+              <!-- card 4  -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/Sounds Of Isha/shiv kailasho ke vasi square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Shiv Kailasho Ke Vasi
+                </div>
+              </div>
+              
+              <!-- card 5 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/Sounds Of Isha/monta re square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                 Monta Re
+                </div>
+              </div>
+              
+              <!-- card 6 -->
+              <div class="indivisual_card_container flex flex_align_center flex_column">
+                <div class="card_img_container">
+                  <img src="./static/images/Sounds Of Isha/dedo prabhu square.jpg" alt="">
+                </div>
+                <div class="card_name">
+                  Dedo Prabhu
+                </div>
               </div>
             </div>
-            
-            <!-- card 6 -->
-            <div class="indivisual_card_container flex flex_align_center flex_column">
-              <div class="card_img_container">
-                <img src="./static/images/popular artist/rahat fateh ali khan square.jpg" alt="">
-              </div>
-              <div class="card_name">
-                Rahat Fateh Ali Khan
+          </section>
+        </main>
+
+        <!-- aside section - queue & playlist -->
+        <aside class="aside_section" id="home_page_aside">
+          <div id="stations_header" class="section_head flex flex_align_center">
+            <h2 class="section_heading">Queue</h2>
+            <div class="section_more flex">
+              <div class="queue_pList">
+                Queue
+              </div>  
+              <div class="drowdown_icon">
+                <i class="fa-solid fa-caret-down"></i>
               </div>
             </div>
           </div>
-        </section>
 
-        <!-- temporary HR  -->
-        <hr>
-
-        <!-- latest release section  -->
-        <section class="latest_release">
-          <!-- header -->
-          <div id="latest_release_header" class="section_head flex flex_align_center">
-            <h2 class="section_heading">Latest Release</h2>
-            <div class="section_more">More</div>
-          </div>
-
-          <!-- cards -->
-          <div id="latest_release_cards_container" class="section_cards_container flex flex_wrap">
+          <div class="queue_pl_cards_container flex flex_column">
 
             <!-- card 1 -->
-            <div class="indivisual_card_container flex">
-              <div class="LR_card_img_container">
-                <img src="./static/images/latest release/O Re Piya Duet From Ameena.jpg" alt="">
-              </div>
-              <div class="card_name_date">
-                <div class="card_name">
-                  O Re Piya
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">
+                  01
                 </div>
-                <div class="card_release_date">
-                  29-11-2024
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/mummy nu pasand square.jpg" alt="">
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">
+                    Mummy Nu Pasand
+                  </div>
+                  <div class="artist_name">
+                    Sunanda Sharma
+                  </div>
                 </div>
               </div>
-              <div class="3dot_icon">
-                <i class="fa-solid fa-ellipsis"></i>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
               </div>
             </div>
             <!-- card 2 -->
-            <div class="indivisual_card_container flex">
-              <div class="LR_card_img_container">
-                <img src="./static/images/latest release/tu mil gaya.jpg" alt="">
-              </div>
-              <div class="card_name_date">
-                <div class="card_name">
-                  Tu Mil Gaya
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">
+                  02
                 </div>
-                <div class="card_release_date">
-                  29-11-2024
+                <div class="card_img_container">
+                  <img src="./static/images/latest release/Chhaap Tilak From Goodbye Mamma.jpg" alt="">
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">
+                    Chhaap Tilak
+                  </div>
+                  <div class="artist_name">
+                    Raju Rao
+                  </div>
                 </div>
               </div>
-              <div class="3dot_icon">
-                <i class="fa-solid fa-ellipsis"></i>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
               </div>
             </div>
             <!-- card 3 -->
-            <div class="indivisual_card_container flex">
-              <div class="LR_card_img_container">
-                <img src="./static/images/latest release/Chhaap Tilak From Goodbye Mamma.jpg" alt="">
-              </div>
-              <div class="card_name_date">
-                <div class="card_name">
-                  Chhaap Tilak
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">
+                  03
                 </div>
-                <div class="card_release_date">
-                  29-11-2024
+                <div class="card_img_container">
+                  <img src="./static/images/latest release/rang ishq ka - bade miyan chote miyan.jpg" alt="">
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">
+                    Rang Ishq Ka
+                  </div>
+                  <div class="artist_name ellipsis">
+                    Vishal Mishra and Irshad Kamil
+                  </div>
                 </div>
               </div>
-              <div class="3dot_icon">
-                <i class="fa-solid fa-ellipsis"></i>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
               </div>
             </div>
             <!-- card 4 -->
-            <div class="indivisual_card_container flex">
-              <div class="LR_card_img_container">
-                <img src="./static/images/latest release/rang ishq ka - bade miyan chote miyan.jpg" alt="">
-              </div>
-              <div class="card_name_date">
-                <div class="card_name">
-                  Rang Ishq Ka
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">
+                  04
                 </div>
-                <div class="card_release_date">
-                  29-11-2024
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/nikle currant square.jpg" alt="">
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">
+                    Nikle Currant
+                  </div>
+                  <div class="artist_name">
+                    Neha Kakkar
+                  </div>
                 </div>
               </div>
-              <div class="3dot_icon">
-                <i class="fa-solid fa-ellipsis"></i>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">
+                  05
+                </div>
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/duji vaar pyar square.jpg" alt="">
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">
+                    Duji Vari Pyar
+                  </div>
+                  <div class="artist_name">
+                    Sunanda Sharma
+                  </div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">
+                  06
+                </div>
+                <div class="card_img_container">
+                  <img src="./static/images/songs/afreen afreen.jpg" alt="">
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">
+                    Afreen Afreen
+                  </div>
+                  <div class="artist_name">
+                    Rahat Fateh Ali Khan
+                  </div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">
+                  07
+                </div>
+                <div class="card_img_container">
+                  <img src="./static/images/punjabi songs/suicide square.jpeg" alt="">
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">
+                    Suicide
+                  </div>
+                  <div class="artist_name">
+                    Sukhe
+                  </div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 8 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">
+                  08
+                </div>
+                <div class="card_img_container">
+                  <img src="./static/images/songs/pasoori square.jpg" alt="">
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">
+                    Pasoori
+                  </div>
+                  <div class="artist_name">
+                    Arijit Singh, Tulsi Kumar
+                  </div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
               </div>
             </div>
           </div>
-        </section>
 
 
 
+        </aside>
 
-
-
-        <!-- stations -->
-        <section class="music_stations">
-
-        </section>
-
-        <!-- curated stations  -->
-        <section class="curated_stations">
-
-        </section>
-
-        <!-- top punjabi songs -->
-        <section class="top_punjabi_song">
-
-        </section>
-
-        <!-- sounds of isha -->
-        <section class="sounds_of_ish">
-
-        </section>
-      </main>
-
-      <!-- aside section - queue & playlist -->
-      <aside class="aside_section" id="home_page_aside">
-
-
-      </aside>
+      </section>
     
       
       
