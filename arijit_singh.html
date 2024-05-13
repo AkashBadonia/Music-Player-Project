@@ -1,486 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arijit Singh Songs</title>
-    
+
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="singer_page width95" id="arijit_singh_page">
-        <!-- header -->
-        <header id="home_page_header" class="header width100">
+      <!-- header -->
+      <header id="home_page_header" class="header width100">
+        <!-- header top section  -->
+        <div class="header_top_section flex width100 flex_align_center">
+          <div id="my_logo">
+            <img
+              src="./static/images/logo/at-ease-high-resolution-logo-transparent.png"
+              alt="At Ease"
+            />
+          </div>
+          <div id="head_top_section_rightDiv" class="flex flex_align_center">
+            <div class="search_bar" id="searchbar_home_header">
+              <form action="">
+                <input
+                  id="input_search_home"
+                  type="text"
+                  placeholder="Search"
+                />
+                <button class="cursor_pointer" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+            <div class="notification_icon cursor_pointer">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div
+              class="profile_pic cursor_pointer flex flex_align_center flex_justify_center"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
 
-            <!-- header top section  -->
-            <div class="header_top_section flex width100 flex_align_center">
-              <div id="my_logo">
-                <img src="./static/images/logo/at-ease-high-resolution-logo-transparent.png" alt="At Ease">
+          <!-- mobile header section -->
+          <nav class="navbar" id="home_mobile_nav">
+            <div id="nav_mobile_bars">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="horizontal_list flex flex_column flex_align_center">
+              <li><a href="">My Profile</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Popular Artists</a></li>
+              <li><a href="">Latest Release</a></li>
+              <li><a href="">Stations</a></li>
+              <li><a href="">Top Punjabi Songs</a></li>
+              <li><a href="">Sounds Of Isha</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- temporary HR  -->
+        <!-- <hr> -->
+        <div class="header_bottom_section mb_2rem">
+          <nav class="navbar" id="navbar_home_page">
+            <ul class="horizontal_list flex flex_wrap">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Popular Artists</a></li>
+              <li><a href="#">Latest Release</a></li>
+              <li><a href="#">Stations</a></li>
+              <li><a href="#">Top Punjabi Songs</a></li>
+              <li><a href="#">Sounds Of Isha</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- temporary HR  -->
+        <!-- <hr> -->
+      </header>
+
+      <section class="main_aside flex">
+        <!-- main section -->
+        <main id="arijit_page_main" class="main_section">
+          <!-- Top section singer  -->
+          <div class="top_section_singer width100 flex mb_1rem padding_1em">
+            <div class="singer_img_container">
+              <img
+                src="./static/images/popular artist/arijit singh square.jpg"
+                alt=""
+              />
+            </div>
+            <div class="singer_details flex flex_column">
+              <div class="singer_name">
+                <h2 class="section_heading mt_0">
+                  Artist In Spotlight: Arijit Singh
+                </h2>
               </div>
-              <div id="head_top_section_rightDiv" class="flex flex_align_center">
-                <div class="search_bar" id="searchbar_home_header"> 
-                  <form action="">
-                    <input id="input_search_home" type="text" placeholder="Search">
-                    <button class="cursor_pointer" type="submit"> 
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </form>
+              <div class="singer_followers">1.5k Followers</div>
+              <div class="singer_about">
+                <p>
+                  Arijit Singh was born on 25 April 1987 in Jiaganj,
+                  Murshidabad, West Bengal to Kakkar Singh, a Punjabi Sikh
+                  father and Aditi Singh, a Bengali Hindu mother. His paternal
+                  family came from Lahore during the Partition. He began his
+                  music training at a very young age at home.
+                </p>
+              </div>
+              <div class="total_songs_detail">8 songs</div>
+              <div class="play_follow_btn flex">
+                <div class="play_btn">
+                  <button type="submit" class="btn_type1">Play</button>
                 </div>
-                <div class="notification_icon cursor_pointer">
-                  <i class="fa-solid fa-bell"></i>
-                </div>
-                <div class="profile_pic cursor_pointer flex flex_align_center flex_justify_center">
-                  <img src="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="follow_btn">
+                  <button type="submit" class="btn_type2">Follow</button>
                 </div>
               </div>
             </div>
-            <!-- temporary HR  -->
-            <!-- <hr> -->
-            <div class="header_bottom_section mb_2rem">
-              <nav class="navbar" id="navbar_home_page">
-                <ul class="horizontal_list flex flex_wrap">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Popular Artists</a></li>
-                  <li><a href="#">Latest Release</a></li>
-                  <li><a href="#">Stations</a></li>
-                  <li><a href="#">Top Punjabi Songs</a></li>
-                  <li><a href="#">Sounds Of Isha</a></li>
-                </ul>
-              </nav>
+          </div>
+
+          <!-- Singer song section -->
+          <div class="singer_songs_section flex flex_column">
+            <!-- card 1 -->
+            <div class="songs_indivisual_container flex width100">
+              <div class="flex content flex_align_center width100">
+                <div class="serial_no">01</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/arijit singh/songs/bulk-image-crop/agar tum saath ho.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Agar Tum Saath Ho</div>
+                  <div class="artist_name">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <!-- temporary HR  -->
-            <!-- <hr> -->
-          </header>
+            <!-- card 2 -->
+            <div class="songs_indivisual_container flex width100">
+              <div class="flex content flex_align_center width100">
+                <div class="serial_no">02</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/arijit singh/songs/bulk-image-crop/tum hi ho.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Tum Hi Ho</div>
+                  <div class="artist_name">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="songs_indivisual_container flex width100">
+              <div class="flex content flex_align_center width100">
+                <div class="serial_no">03</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/arijit singh/songs/bulk-image-crop/pal.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Pal</div>
+                  <div class="artist_name">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="songs_indivisual_container flex width100">
+              <div class="flex content flex_align_center width100">
+                <div class="serial_no">04</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/arijit singh/songs/bulk-image-crop/shayad.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Shayad</div>
+                  <div class="artist_name">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="songs_indivisual_container flex width100">
+              <div class="flex content flex_align_center width100">
+                <div class="serial_no">05</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/arijit singh/songs/bulk-image-crop/Dil jhoom.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Dil Jhoom</div>
+                  <div class="artist_name">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="songs_indivisual_container flex width100">
+              <div class="flex content flex_align_center width100">
+                <div class="serial_no">06</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/arijit singh/songs/bulk-image-crop/tere hawale.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Tere Hawale</div>
+                  <div class="artist_name">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <div class="songs_indivisual_container flex width100">
+              <div class="flex content flex_align_center width100">
+                <div class="serial_no">07</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/arijit singh/songs/bulk-image-crop/kesariya.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Kesariya</div>
+                  <div class="artist_name">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 8 -->
+            <div class="songs_indivisual_container flex width100">
+              <div class="flex content flex_align_center width100">
+                <div class="serial_no">08</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/arijit singh/songs/bulk-image-crop/tujhe kitna chahne lage.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Tujhe Kitna Chahne Lage</div>
+                  <div class="artist_name">Arijit Singh</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </main>
 
-          <section class="main_aside flex">
-            <!-- main section -->
-            <main id="arijit_page_main" class="main_section">
-                <!-- Top section singer  -->
-                <div class="top_section_singer width100 flex mb_1rem padding_1em">
-                    <div class="singer_img_container">
-                        <img src="./static/images/popular artist/arijit singh square.jpg" alt="">
-                    </div>
-                    <div class="singer_details flex flex_column">
-                        <div class="singer_name">
-                            <h2 class="section_heading mt_0">
-                                Artist In Spotlight: Arijit Singh
-                            </h2>
-                        </div>
-                        <div class="singer_followers">
-                            1.5k Followers
-                        </div>
-                        <div class="singer_about">
-                            <p>Arijit Singh was born on 25 April 1987 in Jiaganj, Murshidabad, West Bengal to Kakkar Singh, a Punjabi Sikh father and Aditi Singh, a Bengali Hindu mother. His paternal family came from Lahore during the Partition. He began his music training at a very young age at home.</p>
-                        </div>
-                        <div class="total_songs_detail">
-                            8 songs
-                        </div>
-                        <div class="play_follow_btn flex">
-                            <div class="play_btn ">
-                                <button type="submit" class="btn_type1"> Play </button>
-                            </div>
-                            <div class="follow_btn">
-                                <button type="submit" class="btn_type2"> Follow </button>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
+        <!-- Aside section -->
+        <aside class="aside_section" id="home_page_aside">
+          <div class="aside_queue_icon">
+            <img src="./static/images/icons/playlist_icon.svg" alt="" />
+          </div>
+          <div id="stations_header" class="section_head flex flex_align_center">
+            <h2 class="section_heading">Queue</h2>
+            <div class="section_more flex">
+              <div class="queue_pList">Queue</div>
+              <div class="drowdown_icon">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
 
-
-                  <!-- Singer song section -->
-                  <div class="singer_songs_section flex flex_column">
-
-                    <!-- card 1 -->
-                    <div class="songs_indivisual_container flex width100">
-                      <div class="flex content flex_align_center width100">
-                        <div class="serial_no">
-                          01
-                        </div>
-                        <div class="card_img_container">
-                          <img src="./static/images/arijit singh/songs/bulk-image-crop/agar tum saath ho.jpg" alt="">
-                        </div>
-                        <div class="name_artist">
-                          <div class="card_name">
-                            Agar Tum Saath Ho
-                          </div>
-                          <div class="artist_name">
-                            Arijit Singh
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heart">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                    </div>
-                    <!-- card 2 -->
-                    <div class="songs_indivisual_container flex width100">
-                      <div class="flex content flex_align_center width100">
-                        <div class="serial_no">
-                          02
-                        </div>
-                        <div class="card_img_container">
-                          <img src="./static/images/arijit singh/songs/bulk-image-crop/tum hi ho.jpg" alt="">
-                        </div>
-                        <div class="name_artist">
-                          <div class="card_name">
-                            Tum Hi Ho
-                          </div>
-                          <div class="artist_name">
-                            Arijit Singh
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heart">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                    </div>
-                    <!-- card 3 -->
-                    <div class="songs_indivisual_container flex width100">
-                      <div class="flex content flex_align_center width100">
-                        <div class="serial_no">
-                          03
-                        </div>
-                        <div class="card_img_container">
-                          <img src="./static/images/arijit singh/songs/bulk-image-crop/pal.jpg" alt="">
-                        </div>
-                        <div class="name_artist">
-                          <div class="card_name">
-                            Pal
-                          </div>
-                          <div class="artist_name">
-                            Arijit Singh
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heart">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                    </div>
-                    <!-- card 4 -->
-                    <div class="songs_indivisual_container flex width100">
-                      <div class="flex content flex_align_center width100">
-                        <div class="serial_no">
-                          04
-                        </div>
-                        <div class="card_img_container">
-                          <img src="./static/images/arijit singh/songs/bulk-image-crop/shayad.jpg" alt="">
-                        </div>
-                        <div class="name_artist">
-                          <div class="card_name">
-                            Shayad
-                          </div>
-                          <div class="artist_name">
-                            Arijit Singh
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heart">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                    </div>
-                    <!-- card 5 -->
-                    <div class="songs_indivisual_container flex width100">
-                      <div class="flex content flex_align_center width100">
-                        <div class="serial_no">
-                          05
-                        </div>
-                        <div class="card_img_container">
-                          <img src="./static/images/arijit singh/songs/bulk-image-crop/Dil jhoom.jpg" alt="">
-                        </div>
-                        <div class="name_artist">
-                          <div class="card_name">
-                            Dil Jhoom 
-                          </div>
-                          <div class="artist_name">
-                            Arijit Singh
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heart">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                    </div>
-                    <!-- card 6 -->
-                    <div class="songs_indivisual_container flex width100">
-                      <div class="flex content flex_align_center width100">
-                        <div class="serial_no">
-                          06
-                        </div>
-                        <div class="card_img_container">
-                          <img src="./static/images/arijit singh/songs/bulk-image-crop/tere hawale.jpg" alt="">
-                        </div>
-                        <div class="name_artist">
-                          <div class="card_name">
-                            Tere Hawale 
-                          </div>
-                          <div class="artist_name">
-                            Arijit Singh
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heart">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                    </div>
-                    <!-- card 7 -->
-                    <div class="songs_indivisual_container flex width100">
-                      <div class="flex content flex_align_center width100">
-                        <div class="serial_no">
-                          07
-                        </div>
-                        <div class="card_img_container">
-                          <img src="./static/images/arijit singh/songs/bulk-image-crop/kesariya.jpg" alt="">
-                        </div>
-                        <div class="name_artist">
-                          <div class="card_name">
-                            Kesariya 
-                          </div>
-                          <div class="artist_name">
-                            Arijit Singh
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heart">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                    </div>
-                    <!-- card 8 -->
-                    <div class="songs_indivisual_container flex width100">
-                      <div class="flex content flex_align_center width100">
-                        <div class="serial_no">
-                          08
-                        </div>
-                        <div class="card_img_container">
-                          <img src="./static/images/arijit singh/songs/bulk-image-crop/tujhe kitna chahne lage.jpg" alt="">
-                        </div>
-                        <div class="name_artist">
-                          <div class="card_name">
-                            Tujhe Kitna Chahne Lage
-                          </div>
-                          <div class="artist_name">
-                            Arijit Singh
-                          </div>
-                        </div>
-                      </div>
-                      <div class="heart">
-                        <i class="fa-regular fa-heart"></i>
-                      </div>
-                    </div>
-
-
-
-
-                    
-                    
-                    
-                  </div>
-            </main>
-
-            <!-- Aside section -->
-            <aside class="aside_section" id="home_page_aside">
-              <div id="stations_header" class="section_head flex flex_align_center">
-                <h2 class="section_heading">Queue</h2>
-                <div class="section_more flex">
-                  <div class="queue_pList">
-                    Queue
-                  </div>  
-                  <div class="drowdown_icon">
-                    <i class="fa-solid fa-caret-down"></i>
+          <div class="queue_pl_cards_container flex flex_column">
+            <!-- card 1 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">01</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/punjabi songs/mummy nu pasand square.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Mummy Nu Pasand</div>
+                  <div class="artist_name">Sunanda Sharma</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">02</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/latest release/Chhaap Tilak From Goodbye Mamma.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Chhaap Tilak</div>
+                  <div class="artist_name">Raju Rao</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">03</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/latest release/rang ishq ka - bade miyan chote miyan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Rang Ishq Ka</div>
+                  <div class="artist_name ellipsis">
+                    Vishal Mishra and Irshad Kamil
                   </div>
                 </div>
               </div>
-    
-              <div class="queue_pl_cards_container flex flex_column">
-    
-                <!-- card 1 -->
-                <div class="aside_indivisual_container flex">
-                  <div class="flex content flex_align_center">
-                    <div class="serial_no">
-                      01
-                    </div>
-                    <div class="card_img_container">
-                      <img src="./static/images/punjabi songs/mummy nu pasand square.jpg" alt="">
-                    </div>
-                    <div class="name_artist">
-                      <div class="card_name">
-                        Mummy Nu Pasand
-                      </div>
-                      <div class="artist_name">
-                        Sunanda Sharma
-                      </div>
-                    </div>
-                  </div>
-                  <div class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">04</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/punjabi songs/nikle currant square.jpg"
+                    alt=""
+                  />
                 </div>
-                <!-- card 2 -->
-                <div class="aside_indivisual_container flex">
-                  <div class="flex content flex_align_center">
-                    <div class="serial_no">
-                      02
-                    </div>
-                    <div class="card_img_container">
-                      <img src="./static/images/latest release/Chhaap Tilak From Goodbye Mamma.jpg" alt="">
-                    </div>
-                    <div class="name_artist">
-                      <div class="card_name">
-                        Chhaap Tilak
-                      </div>
-                      <div class="artist_name">
-                        Raju Rao
-                      </div>
-                    </div>
-                  </div>
-                  <div class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <!-- card 3 -->
-                <div class="aside_indivisual_container flex">
-                  <div class="flex content flex_align_center">
-                    <div class="serial_no">
-                      03
-                    </div>
-                    <div class="card_img_container">
-                      <img src="./static/images/latest release/rang ishq ka - bade miyan chote miyan.jpg" alt="">
-                    </div>
-                    <div class="name_artist">
-                      <div class="card_name">
-                        Rang Ishq Ka
-                      </div>
-                      <div class="artist_name ellipsis">
-                        Vishal Mishra and Irshad Kamil
-                      </div>
-                    </div>
-                  </div>
-                  <div class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <!-- card 4 -->
-                <div class="aside_indivisual_container flex">
-                  <div class="flex content flex_align_center">
-                    <div class="serial_no">
-                      04
-                    </div>
-                    <div class="card_img_container">
-                      <img src="./static/images/punjabi songs/nikle currant square.jpg" alt="">
-                    </div>
-                    <div class="name_artist">
-                      <div class="card_name">
-                        Nikle Currant
-                      </div>
-                      <div class="artist_name">
-                        Neha Kakkar
-                      </div>
-                    </div>
-                  </div>
-                  <div class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <!-- card 5 -->
-                <div class="aside_indivisual_container flex">
-                  <div class="flex content flex_align_center">
-                    <div class="serial_no">
-                      05
-                    </div>
-                    <div class="card_img_container">
-                      <img src="./static/images/punjabi songs/duji vaar pyar square.jpg" alt="">
-                    </div>
-                    <div class="name_artist">
-                      <div class="card_name">
-                        Duji Vari Pyar
-                      </div>
-                      <div class="artist_name">
-                        Sunanda Sharma
-                      </div>
-                    </div>
-                  </div>
-                  <div class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <!-- card 6 -->
-                <div class="aside_indivisual_container flex">
-                  <div class="flex content flex_align_center">
-                    <div class="serial_no">
-                      06
-                    </div>
-                    <div class="card_img_container">
-                      <img src="./static/images/songs/afreen afreen.jpg" alt="">
-                    </div>
-                    <div class="name_artist">
-                      <div class="card_name">
-                        Afreen Afreen
-                      </div>
-                      <div class="artist_name">
-                        Rahat Fateh Ali Khan
-                      </div>
-                    </div>
-                  </div>
-                  <div class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <!-- card 7 -->
-                <div class="aside_indivisual_container flex">
-                  <div class="flex content flex_align_center">
-                    <div class="serial_no">
-                      07
-                    </div>
-                    <div class="card_img_container">
-                      <img src="./static/images/punjabi songs/suicide square.jpeg" alt="">
-                    </div>
-                    <div class="name_artist">
-                      <div class="card_name">
-                        Suicide
-                      </div>
-                      <div class="artist_name">
-                        Sukhe
-                      </div>
-                    </div>
-                  </div>
-                  <div class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <!-- card 8 -->
-                <div class="aside_indivisual_container flex">
-                  <div class="flex content flex_align_center">
-                    <div class="serial_no">
-                      08
-                    </div>
-                    <div class="card_img_container">
-                      <img src="./static/images/songs/pasoori square.jpg" alt="">
-                    </div>
-                    <div class="name_artist">
-                      <div class="card_name">
-                        Pasoori
-                      </div>
-                      <div class="artist_name">
-                        Arijit Singh, Tulsi Kumar
-                      </div>
-                    </div>
-                  </div>
-                  <div class="heart">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
+                <div class="name_artist">
+                  <div class="card_name">Nikle Currant</div>
+                  <div class="artist_name">Neha Kakkar</div>
                 </div>
               </div>
-    
-    
-    
-            </aside>
-          </section>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">05</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/punjabi songs/duji vaar pyar square.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Duji Vari Pyar</div>
+                  <div class="artist_name">Sunanda Sharma</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">06</div>
+                <div class="card_img_container">
+                  <img src="./static/images/songs/afreen afreen.jpg" alt="" />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Afreen Afreen</div>
+                  <div class="artist_name">Rahat Fateh Ali Khan</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">07</div>
+                <div class="card_img_container">
+                  <img
+                    src="./static/images/punjabi songs/suicide square.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Suicide</div>
+                  <div class="artist_name">Sukhe</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <!-- card 8 -->
+            <div class="aside_indivisual_container flex">
+              <div class="flex content flex_align_center">
+                <div class="serial_no">08</div>
+                <div class="card_img_container">
+                  <img src="./static/images/songs/pasoori square.jpg" alt="" />
+                </div>
+                <div class="name_artist">
+                  <div class="card_name">Pasoori</div>
+                  <div class="artist_name">Arijit Singh, Tulsi Kumar</div>
+                </div>
+              </div>
+              <div class="heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
 
+      <!-- bottom music player -->
+      <footer>
+        <div
+          class="bottom_music_player flex flex_column width100 flex_align_center"
+        >
+          <!-- music player top section  -->
+          <div class="musicPlayerTop flex width100 flex_align_center">
+            <div class="start_box flex width100">
+              <div class="card_img_container flex flex_align_center">
+                <img
+                  src="./static/images/arijit singh/songs/bulk-image-crop/agar tum saath ho.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="song_name_artist flex flex_column flex_justify_center"
+              >
+                <div class="song_name">Agar Tum Saath Ho</div>
+                <div class="artists_name">Arijit Singh</div>
+              </div>
+            </div>
+            <div class="mid_box flex width100 flex_justify_center">
+              <div class="shuffle_icon">
+                <i class="fa-solid fa-shuffle"></i>
+              </div>
+              <div class="main_control_icons flex">
+                <div class="previous_song_icon">
+                  <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="play_pause_icon">
+                  <div class="play_icon">
+                    <i class="fa-solid fa-circle-play"></i>
+                  </div>
+                  <!-- <div class="pause_icon">
+                      <i class="fa-solid fa-circle-pause"></i>
+                    </div>
+                    <div class="stop_icon">
+                      <i class="fa-solid fa-circle-stop"></i>
+                    </div> -->
+                </div>
+                <div class="next_song_icon">
+                  <i class="fa-solid fa-forward-step"></i>
+                </div>
+              </div>
+              <div class="repeat_icon">
+                <i class="fa-solid fa-repeat"></i>
+              </div>
+            </div>
 
-
-
-
+            <div class="end_box flex width100">
+              <div class="progress_time flex">
+                <div class="time_elasped">0:00/</div>
+                <div class="song_duration">4:44</div>
+              </div>
+              <div class="volume_control_icon">
+                <!-- <div class="volume_off_icon">
+                    <i class="fa-solid fa-volume-off"></i>
+                  </div>
+                  <div class="volume_low_icon">
+                    <i class="fa-solid fa-volume-low"></i>
+                  </div> -->
+                <div class="volume_high_icon">
+                  <i class="fa-solid fa-volume-high"></i>
+                </div>
+              </div>
+              <div class="queue_pList_icon">
+                <img src="./static/images/icons/playlist_icon.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- music player progress bar  -->
+          <div class="musicProgressBar width95">
+            <form action="">
+              <input type="range" max="100" min="0" class="width100" />
+            </form>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

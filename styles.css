@@ -18,11 +18,11 @@ body {
     background-color: var(--secondary_color);
     border-color: var(--tertiary_color);
 }
-.section_heading, .search_bar button, .horizontal_list li a, .card_name, .serial_no, .heart, .notification_icon {
+.section_heading, .search_bar button, .horizontal_list li a, .card_name, .serial_no, .heart, .notification_icon, i, .bottom_music_player .song_name, .queue_pList_icon img{
     color: var(--fourth_color);
 }
 
-.artist_name, .card_release_date, .section_more, .dots, #input_search_home::placeholder, .singer_details:not(.section_heading) {
+.artist_name, .card_release_date, .section_more, .dots, #input_search_home::placeholder, .singer_details:not(.section_heading), .bottom_music_player .artists_name, .bottom_music_player .progress_time{
     color: var(--tertiary_color);
     /* font-size: 1rem; */
 }
@@ -168,9 +168,36 @@ body {
 }
 
 
+/* mobile nav bar  */
+#home_mobile_nav {
+    display: none;
+    position: relative;
+}
+#home_mobile_nav #nav_mobile_bars {
+    font-size: 1.5em;
+}
+#home_mobile_nav ul{
+    background-color: var(--secondary_color);
+    padding: 0.5em;
+    position: absolute;
+    right: 0rem;
+    top: 0.5rem;
+    z-index: 2;
+    width: 10rem;
+    display: none;
+    border-radius: 0.5em;
+    border: 1px solid var(--fourth_color);
+}
+#home_mobile_nav ul li {
+    display: block;
+    padding: 0.3em;
+}
+
+
 /* main aside section */
 .main_aside {
     gap: 2em;
+    margin-bottom: 6rem;
 }
 main {
     width: 70%;
@@ -325,6 +352,10 @@ main {
 
 /* aside section  */
 
+.aside_queue_icon {
+    display: none;
+}
+
 #home_page_aside {
     width: 28%;
 }
@@ -383,7 +414,66 @@ main {
     opacity: 1;
 }
 
+/* bottom_music_player */
+.bottom_music_player {
+    justify-items: space-around;
+    background-color: var(--secondary_color);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 0.5em 2em;
+}
+.bottom_music_player .card_img_container {
+    max-width: 50px;
+}
+.bottom_music_player .card_img_container img {
+    max-width: 2.5em;
+    max-height: 2.5em;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 0.4em;
+}
+.bottom_music_player i {
+    font-size: 1.3em;
+}
+.bottom_music_player .queue_pList_icon img {
+    width: 1.3em;
+}
+
+.end_box {
+    justify-content: end;
+}
+
+.start_box, .mid_box, .end_box {
+    gap: 1em;
+}
+.main_control_icons {
+    gap: 0.5em;
+}
+.musicProgressBar input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+.musicProgressBar input[type = "range"]::-webkit-slider-runnable-track {
+    background-color: var(--tertiary_color);
+    height: 0.2em;
+    border-radius: 1em;
+}
+.musicProgressBar input[type = "range"]::-webkit-slider-thumb {
+    background-color: var(--secondary_color);
+    border: 2px solid var(--fourth_color);
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    margin-top: -0.4em;
+}
+
 /* arijit singh page  */
+
+/* singer top section  */
 .top_section_singer {
     gap: 2em;
     background-color: var(--bg_color);
@@ -391,12 +481,12 @@ main {
 
 .singer_img_container{
     width: 40%;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     max-width: 320px;
 }
 .singer_details {
     width: 60%;
-    flex-grow: 10;
+    /* flex-grow: 10; */
 }
 .singer_img_container img{
     width: 100%;
@@ -432,6 +522,7 @@ main {
     margin: 1em 0em;
 }
 
+/* singer songs section  */
 .singer_songs_section {
     gap: 1em;
 }
@@ -451,6 +542,117 @@ main {
 }
 .songs_indivisual_container .content {
     gap: 1.5em;
+}
+
+/* media queries */
+@media screen and (max-width: 769px) {
+    .main_section {
+        width: 100%;
+    }
+
+    .carousel_img img {
+        min-width: 50px;
+    }
+    
+    #home_page_aside {
+        width: 60%;
+    }
+    .aside_section {
+        background-color: var(--secondary_color);
+        position: absolute;
+        top: 1000em;
+        right: 500em;
+        padding: 1em;
+        /* overflow-y: scroll; */
+        width: 60%;
+    }
+    .aside_queue_icon {
+        display: flex;
+        position: fixed;
+        top: 25em;
+        right: 0.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: var(--secondary_color);
+        padding: 0.8em;
+        border-radius: 50%;
+    }
+    .aside_section:hover {
+        /* position: sticky; */
+        top: 25em;
+        right: 3.8rem;
+    }
+
+    /* music player bottom  */
+    .bottom_music_player .shuffle_icon, .repeat_icon, .queue_pList_icon{
+        display: none;
+    }
+    .bottom_music_player i{
+        font-size: 1em;
+    }
+    .start_box {
+        flex-shrink: 1;
+    }
+    .mid_box {
+        flex-shrink: 1.5;
+    }
+    .end_box {
+        flex-shrink: 2;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header_top_section {
+        margin-bottom: 1rem;
+    }
+    #input_search_home {
+        width: 7rem;
+        height: 1.5em;
+    }
+    .search_bar button {
+        height: 1.6em;
+        width: 1.6em;
+        top: 0.3em;
+        right: 0.3em;
+    }
+    .search_bar button i{
+        font-size: 0.8em;
+        transform: translatex(-25%);
+    }
+    #head_top_section_rightDiv {
+        gap: 1.5em;
+    }
+    .profile_pic img {
+        display: none;
+    }
+    #head_top_section_rithtDiv .notification_icon {
+        font-size: 0.8em;
+    }
+    .header_bottom_section {
+        display: none;
+    }
+    #home_mobile_nav {
+        display: block;
+    }
+    #home_mobile_nav:hover ul{
+        display: flex;
+    }
+
+    /* singer page */
+    .singer_img_container{
+        max-width: 100px;
+    }
+    .singer_img_container img{
+        width: 100%;
+        max-width: 150px;
+        min-width: 120px;
+    }
+    #home_mobile_nav #nav_mobile_bars {
+        font-size: 1.2em;
+    }
+    .notification_icon {
+        font-size: 1.2em;
+    }
 }
 
 
